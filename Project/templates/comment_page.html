@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Page</title>
+    <link rel="stylesheet" href="../static/css/comment.css">
+</head>
+<body>
+    <h1>Submit Your Comment</h1>
+    <form action="comment_submit" method="post">
+        <div class="form-section">
+            <label for="recipeName">Recipe Name:</label>
+            <select id="recipeName" name="recipeName" required>
+                <option value="" disabled selected>select</option>
+                <option value="pancake">Pancake</option>
+                <option value="chickensalad">Chicken Salad</option>
+                <option value="chocolatecake">Chocolate Cake</option>
+                <option value="spaghettibolognese">Spaghetti Bolognese</option>
+            </select>
+        </div>
+        <div class="form-section">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-section">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50" required></textarea>
+        </div>
+        <div class="form-section">
+            <label for="date_posted">Date Posted:</label>
+            <input type="date" id="date_posted" name="date_posted" required>
+        </div>
+        <button type="submit">Submit Comment</button>
+    </form>
+
+</body>
+</html>

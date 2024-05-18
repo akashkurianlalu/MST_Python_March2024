@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeHub</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <h1>Recipe Search</h1>
+    <!-- Recipe Search Form -->
+    <form action="search" method="get">
+        <label for="searchTerm">Select your Food Item:</label>
+        <select id="searchTerm" name="itemSearch" required>
+            <option value="" disabled selected>Search</option>
+            <option value="pancake">Pancake</option>
+            <option value="chickensalad">Chicken Salad</option>
+            <option value="chocolatecake">Chocolate Cake</option>
+            <option value="spaghettibolognese">Spaghetti Bolognese</option>
+        </select>
+        <button type="submit">Search</button>
+    </form>
+    <h2>Featured Recipes</h2>
+
+    <!-- Recipe Display Area -->
+    <div class="recipe">
+        <h3>Pancakes</h3>
+        <img src="../static/images/pancakes-berries-maple-syrup-260nw-365501507.webp" alt="Pancakes" width="15%" height="15%">
+        <p><strong>Category:</strong> Breakfast</p>
+        <p><strong>Ingredients:</strong> Flour, eggs, milk, sugar</p>
+        <a href="pancake_details">click for more details</a>
+    </div>
+
+    <div class="recipe">
+        <h3>Chicken Salad</h3>
+        <img src="../static/images/salad-chicken-meat-fresh-vegetable-600nw-1089760742.webp" alt="Chicken Salad" width="15%" height="15%">
+        <p><strong>Category:</strong> Lunch</p>
+        <p><strong>Ingredients:</strong> Chicken, lettuce, tomato, cucumber</p>
+        <a href="chicken_salad_details">click for more details</a>
+    </div>
+
+    <div class="recipe">
+        <h3>Spaghetti Bolognese</h3>
+        <img src="../static/images/delicious-spaghetti-served-on-black-260nw-653192149.webp" alt="Spaghetti Bolognese" width="15%" height="15%">
+        <p><strong>Category:</strong> Dinner</p>
+        <p><strong>Ingredients:</strong> Spaghetti, ground beef, tomato sauce</p>
+        <a href="Spaghetti_Bolognese_details">click for more details</a>
+    </div>
+
+    <div class="recipe">
+        <h3>Chocolate Cake</h3>
+        <img src="../static/images/CLASSIC-CHOCOLATE-CAKE.webp" alt="Chocolate Cake" width="15%" height="15%">
+        <p><strong>Category:</strong> Dessert</p>
+        <p><strong>Ingredients:</strong> Flour, sugar, cocoa powder, eggs, milk</p>
+        <a href="chocolate_cake_details">click for more details</a>
+    </div>
+    
+</body>
+</html>
