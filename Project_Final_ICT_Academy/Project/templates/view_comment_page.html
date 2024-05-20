@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Comments</title>
+    <link rel="stylesheet" href="../static/css/view_comment_page.css">
+</head>
+<body>
+    <h1>Comments</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>Comment</th>
+                <th>Date_Posted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in sqldata %}
+            <tr>
+                <td>{{i[0]}}</td>
+                <td>{{i[1]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="navigation-buttons">
+        <a href="index">Back to Home Page</a>
+    </div>
+
+</body>
+</html>

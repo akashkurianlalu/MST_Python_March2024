@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Page</title>
+    <link rel="stylesheet" href="../static/css/submit_details.css">
+</head>
+<body>
+    <h1>Submit Your Recipe</h1>
+    <form action="submit_recipe" method="post" enctype="multipart/form-data">
+        <div class="form-section">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="form-section">
+            <label for="recipeName">Recipe Name:</label>
+            <select id="recipeName" name="recipeName" required>
+                <option value="" disabled selected>Recipe Name</option>
+                <option value="pancake">Pancake</option>
+                <option value="chickensalad">Chicken Salad</option>
+                <option value="chocolatecake">Chocolate Cake</option>
+                <option value="spaghettibolognese">Spaghetti Bolognese</option>
+            </select>
+        </div>
+
+        <div class="form-section">
+            <label for="cookingType">Cooking Type:</label>
+            <select id="cookingType" name="cookingType" required>
+                <option value="" disabled selected>Select cooking type</option>
+                <option value="baking">Baking</option>
+                <option value="grilling">Grilling</option>
+                <option value="stir-frying">Stir-Frying</option>
+                <option value="boiling">Boiling</option>
+                <option value="steaming">Steaming</option>
+            </select>
+        </div>
+
+        <div class="form-section">
+            <label for="servingSize">Serving Size:</label>
+            <input type="number" id="servingSize" name="servingSize" min="1" required>
+        </div>
+
+        <div class="form-section">
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea>
+        </div>
+
+        <div class="form-section">
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" rows="4" cols="50" required></textarea>
+        </div>
+
+        <div class="form-section">
+            <label for="photo">Optional Photo (JPEG or PNG):</label>
+            <input type="file" id="photo" name="photo" accept="image/jpeg, image/png">
+        </div>
+
+        <button type="submit">Submit Recipe</button>
+    </form>
+</body>
+</html>
